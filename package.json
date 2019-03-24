@@ -1,0 +1,24 @@
+{
+  "name": "node-starter",
+  "version": "1.0.0",
+  "description": "Node rest api starter project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "debug": "nodemon inspect server.js",
+    "reinstall": "rm -rf node_modules && npm install",
+    "kill": "lsof -P | grep ':5000' | awk '{print $2}' | xargs kill -9",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10"
+  }
+}
